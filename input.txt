@@ -1,0 +1,8 @@
+7
+aabb
+bbacccabab
+aaaa
+c
+bbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ab
+aaabbbbbabcbbbaaaa
