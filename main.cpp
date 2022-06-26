@@ -15,7 +15,7 @@ void printDS(vector<int> a, char c1, char c2) {
 }
 
 // string array -> decimal array
-void string2decimal(string in, vector<int>* out, int c1, int c2) {
+void string2num(string in, vector<int>* out, int c1, int c2) {
     for (auto c : in) {
         if (c == c1) {
             out->push_back(1);
@@ -57,22 +57,13 @@ int Kadane(vector<int> input) {
 
 int getMaxFreqDeviation(string s) {
     int mfd = 0;
-    if (__cplusplus == 201703L)
-        std::cout << "C++17" << endl;
-    else if (__cplusplus == 201402L)
-        std::cout << "C++14" << endl;
-    else if (__cplusplus == 201103L)
-        std::cout << "C++11" << endl;
-    else if (__cplusplus == 199711L)
-        std::cout << "C++98" << endl;
-    else
-        std::cout << "pre-standard C++" << endl;
+
     for (int c1 = 'a'; c1 <= 'z'; c1++) {
         for (int c2 = 'a'; c2 <= 'z'; c2++) {
             if (c1 == c2) continue;
 
             vector<int> dec_arr;
-            string2decimal(s, &dec_arr, c1, c2);
+            string2num(s, &dec_arr, c1, c2);
 
             //printDS(v_s2d, c1, c2);
 
